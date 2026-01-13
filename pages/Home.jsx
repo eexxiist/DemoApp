@@ -16,15 +16,23 @@ const Home = () => {
             }
         };
         getCards();
-        console.log(cards);
     }, []);
 
     return (
         <div>
-            <ul>
+            <ul style={{ display: "flex" }}>
                 {cards.map((card) => (
-                    <li>
-                        <h4>{card.title}</h4>
+                    <li
+                        key={card.id}
+                        style={{
+                            border: "1px solid black",
+                            display: "block",
+                            width: "300px",
+                            margin: "10px",
+                            padding: "20px",
+                        }}
+                    >
+                        <h4 style={{ marginBottom: "20px" }}>{card.title}</h4>
                         <p>{card.body}</p>
                     </li>
                 ))}

@@ -6,11 +6,7 @@ const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState("light");
 
     const toggleTheme = () => {
-        if (theme === "light") {
-            setTheme("dark");
-        } else {
-            setTheme("light");
-        }
+        setTheme((prev) => (prev === "light" ? "dark" : "light"));
     };
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>

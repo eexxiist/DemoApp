@@ -1,0 +1,32 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    line-height: 1;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.button:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.label {
+    font-size: 0.85rem;
+    user-select: none;
+}
